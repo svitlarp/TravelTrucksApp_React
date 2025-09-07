@@ -1,11 +1,18 @@
+import CamperItem from '../camper-item/CamperItem';
 import css from './CamperCatalog.module.css';
 
-const CamperCatalog = () => {
+
+const CamperCatalog = ({camperList}) => {
     return (
-        <div className={css.camperCatalog}>
-            <h4>CamperCatalog</h4>
-        </div>
+            <ul className={css.camperCatalog}>
+                {camperList.map(camper => (
+                    <li key={camper.id}>
+                        <CamperItem camper={camper} />
+                    </li>
+                ))}
+            </ul>
     );
 }
+
 
 export default CamperCatalog;

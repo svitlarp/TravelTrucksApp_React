@@ -5,6 +5,35 @@
   --color-white: #ffffff;
   --color-text: #F7F7F7;
   --color-interactiveEl: #E44848;
+  --color-interactiveElHover: #D84343;
   --color-background: #6C717B;
+  --color-main: #101828;
 }
 
+/* Nav-menu */
+.nav {
+  display: flex;  /* horizontal layout */
+  align-items: center;   /* vertical alignment of items */
+  justify-content: flex-start;   /* items start from left */
+  position: relative;
+}
+
+.navMenu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navLink {
+  margin-right: 32px;
+  font-weight: 500;
+  color: var(--color-main);
+}
+
+.navLink:hover, .navLink:active {
+  color: var(--color-interactiveElHover);
+}
+
+.logoImg {
+  margin: 28px 0 28px 64px;
+}

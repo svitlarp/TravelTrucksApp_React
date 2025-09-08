@@ -1,0 +1,102 @@
+
+.camperCard {
+    padding: 24px;
+    border: solid 1px #DADDE1;
+    border-radius: 20px;
+    /* display: flex; */
+    display: block;
+    margin-bottom: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    color: var(--color-main);
+    border: solid 1px red;
+}
+
+
+/* TODO ! gap: 24px */
+.camperCardContentInfo {
+    display: flex; 
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Image */
+.camperCardContentImg {
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    width: 292px;
+    height: 320px;
+}
+
+/* Info Block */
+
+/* Info: Text Container */
+
+/* Info: Text Container -> Title & Details */
+
+.textContainerTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* |_ Title Texte */
+
+/* |_Title Price */
+.price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* .priceNum {
+    padding: 4px 0;
+} */
+
+.textContainerDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.reviews,
+.location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+
+
+/* Info: supportingText */
+.supportingText {
+
+}
+
+/* Info: badgesContainer */
+.badgesContainer {
+
+}
+
+/* Info: camperCardShowMoreBtn */
+.camperCardShowMoreBtn {
+    padding: 16px 40px;
+    background-color: var(--color-interactiveEl);
+    border-radius: 200px;
+    color: var(--color-white);
+    width: 166px;
+    font-size: inter;
+    font-weight: 500; 
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    border: none;
+}

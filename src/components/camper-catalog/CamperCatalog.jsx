@@ -6,8 +6,8 @@ const CamperCatalog = ({camperList}) => {
     return (
             <ul className={css.camperCatalog}>
                 {camperList.map(camper => (
-                    <li key={camper.id}>
-                        <CamperItem camper={camper} />
+                    <li className={css.CamperCatalogListItem} key={camper.id}>
+                        <CamperItem camperCard={camper} />
                     </li>
                 ))}
             </ul>

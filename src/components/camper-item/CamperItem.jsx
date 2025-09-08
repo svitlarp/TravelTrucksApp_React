@@ -1,5 +1,6 @@
 import css from './CamperItem.module.css';
 import icons from '../../assets/icons.svg';
+import { Link, useParams } from "react-router-dom";
 
 
 const CamperItem = ({camperCard}) => {
@@ -7,7 +8,7 @@ const CamperItem = ({camperCard}) => {
         <div className={css.camperCard}>
             <div className={css.content}>
                 <img className={css.camperCardContentImg}
-                    src={camperCard.gallery.original}
+                    src={camperCard.gallery[0].original}
                     alt={camperCard.name}
                     title={camperCard.name}
                 />
@@ -42,7 +43,9 @@ const CamperItem = ({camperCard}) => {
                     <div className={css.badgesContainer}>
                         <p>{camperCard.transmission}, {camperCard.engine}, kitchen: {camperCard.kitchen}, AC: {camperCard.AC} </p>
                     </div>
-                    <button type='button' className={css.camperCardShowMoreBtn}>Show more</button>
+                    <Link to={`/catalog/${camperCard.id}`}>
+                        <button type='button' className={css.camperCardShowMoreBtn}>Show more</button>
+                    </Link>
                 </div>
             </div>
         </div>

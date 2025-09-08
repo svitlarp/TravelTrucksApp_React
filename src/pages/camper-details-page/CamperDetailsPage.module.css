@@ -1,0 +1,97 @@
+
+.camperDetails {
+}
+
+.camperTitle {
+    margin-bottom: 28px;
+}
+        
+/* Title */
+.titleBtn {
+    color: var(--color-main);
+    font-weight: 500;
+}
+
+.detailsText {
+    color: var(--color-main);
+    font-weight: 500;
+}
+
+.detailsReviews {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.detailsReviewsBtn,
+.detailsMapBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 48px;
+    /* margin-bottom: 28px; */
+}
+
+.galleryItem {
+    width: calc((100% - 2 * 48px) / 3);
+    aspect-ratio: calc(360/300);
+}
+
+.galleryImg {
+    /* min-width: 292px; */
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Text */
+.camperDescription {
+    margin-bottom: 60px;
+}
+
+{/* Tabs */}
+
+{/* Details */}
+
+{/* Form */}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+    width: 527px;
+}
+
+.inputs input,
+.inputs textarea {
+    padding: 18px 0 18px 18px;
+    background-color: #F7F7F7;
+    width: 527px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: none;
+}
+
+.formSendBtn {
+    background-color: var(--color-interactiveEl);
+    padding: 16px 60px;
+    border-radius: 200px;
+    color: var(--color-white);
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    margin-top: 40px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}

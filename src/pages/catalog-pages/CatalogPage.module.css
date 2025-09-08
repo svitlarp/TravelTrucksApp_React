@@ -1,0 +1,8 @@
+.catalogPage {
+    display: flex;
+    flex-direction: row;
+}
+
+.filterLocationLabel {
+    color: #6C717B;
+}

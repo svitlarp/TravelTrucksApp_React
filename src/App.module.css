@@ -33,6 +33,8 @@ ul, ol {
   align-items: center;   /* vertical alignment of items */
   justify-content: flex-start;   /* items start from left */
   position: relative;
+  background-color: var(--color-text);
+  border-bottom: 1px solid #F2F4F7;
 }
 
 .navMenu {
